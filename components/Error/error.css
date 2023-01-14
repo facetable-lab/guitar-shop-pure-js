@@ -1,0 +1,17 @@
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.error-msg {
+    min-width: 600px;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--color-error-light);
+    box-shadow: var(--box-shadow);
+    color: var(--color-white);
+    border-left: px solid var(--color-error-dark);
+}
