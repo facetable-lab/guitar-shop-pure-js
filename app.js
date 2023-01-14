@@ -11,13 +11,17 @@ function render() {
     productsPage.render();
 }
 
+//Рендер спиннера
+spinnerPage.render();
+
 // server/catalog.json
 fetch('https://json.extendsclass.com/bin/bd136e2d2889').then(r => r.json()).then(body => {
     CATALOG = body;
+    spinnerPage.handleClear()
     render();
 }).catch(err => {
-    console.error(err)
-})
+    console.error(err);
+});
 
 
 
